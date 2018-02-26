@@ -1,1 +1,22 @@
-
+h1{
+    text-align: center;
+}
+body{
+    background:url("https://www.wallpaperup.com/uploads/wallpapers/2012/10/08/18448/202d87edf6906b6260dfdf77c4cff7d1-700.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    font-family: 'Courgette', cursive;
+}
+img{
+    border:dashed;
+    width:250px;
+    height:300px;
+}
+input{
+    border-radius:30px;
+}
+button{
+    border-radius: 22.5px;
+    font-family: 'Courgette', cursive;
+}

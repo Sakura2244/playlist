@@ -16,12 +16,12 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 // Songs
-var mySong = {
-	"title":"24K Magic",
-	"artist":"Bruno Mars",
-	"mp3url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-	"imageurl":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
-}
+//var mySong = {
+//	"title":"24K Magic",
+//	"artist":"Bruno Mars",
+//	"mp3url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
+//	"imageurl":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+//}
 
 var myPlayList = [
 	{
@@ -40,7 +40,7 @@ var myPlayList = [
 		"title":"Sorry",
 		"artist":"Justin Bieber",
 		"mp3-url":"https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
-		"image-url":"http://assets-s3.usmagazine.com/uploads/assets/articles/93827-justin-biebers-sorry-choreographer-spills-video-style-secrets-parris-goebel/1445638548_justin-bieber-sorry-dancers-zoom.jpg",
+		"imageurl":"http://assets-s3.usmagazine.com/uploads/assets/articles/93827-justin-biebers-sorry-choreographer-spills-video-style-secrets-parris-goebel/1445638548_justin-bieber-sorry-dancers-zoom.jpg",
 	}
 
 ]
@@ -49,15 +49,29 @@ var myPlayList = [
 
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
-	$('.songs').append("<p>Title: " + mySong.title + "</p>");
-	$('.songs').append("<p>Artist: " + mySong.artist + "</p>");
-	$('.songs').append("<p>MP3: <a href=" +mySong.mp3url+ "> 24K Magic </a></p>");
-	$('.songs').append("<img src=" + mySong.imageurl + ">");
-	$('.songs').append("<p>Title: " + myPlayList.title + "</p>");
-	$('.songs').append("<p>Artist: " + myPlayList.artist + "</p>");
-	$('.songs').append("<p>MP3: <a href=" +myPlayList.mp3url+ "> 24K Magic </a></p>");
-	$('.songs').append("<img src=" + myPlayList.imageurl + ">");
-	
+//	$('.songs').append("<p>Title: " + mySong.title + "</p>");
+//	$('.songs').append("<p>Artist: " + mySong.artist + "</p>");
+//	$('.songs').append("<p>MP3: <a href=" +mySong.mp3url+ "> 24K Magic </a></p>");
+//	$('.songs').append("<img src=" + mySong.imageurl + ">");
+//	$('.songs').append("<p>Title: " + myPlayList.title + "</p>");
+//	$('.songs').append("<p>Artist: " + myPlayList.artist + "</p>");
+//	$('.songs').append("<p>MP3: <a href=" +myPlayList.mp3url+ "> 24K Magic </a></p>");
+//	$('.songs').append("<img src=" + myPlayList.imageurl + ">");
+	myPlayList.forEach(function(songs) {
+    var title = songs.title;
+    var artist = songs.artist;
+    var url = songs.mp3url;
+    var image = songs.imageurl;
+ 
+    $("body").append(`
+		<div class="songs">
+        	<h3>Title: ${title}</h2>
+        	<a>Artist: ${artist}</a>
+        	<img src="${image}">
+        	<a href= ${url}> Play Song</a> 
+        </div>
+`);
+});
 
 
 
