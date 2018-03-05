@@ -63,34 +63,62 @@ $( document ).ready(function() {
     var url = songs.mp3url;
     var image = songs.imageurl;
  
-    $("body").append(`
+   $("body").append(`
 		<div class="songs">
         	<h3>Title: ${title}</h2>
         	<a>Artist: ${artist}</a>
         	<img src="${image}">
         	<a href= ${url}> Play Song</a> 
-        </div>
+       </div>
 `);
 });
 
 
 
 });
+$('#addSong').click(function(){
+    addSong();
+    displayList();
+    console.log("hello");
+    
+});
+$('#clear').click(function(){
+    clearList();
+});
 
 function displayList(){
-
+	for (var i = 0; i < myPlayList.length; i++){
+        $('.songs').append('<p>' + myPlayList[i].title+'<p>');
+        $('.songs').append('<p>' + myPlayList[i].artist +'<p>');
+        $('.songs').append('<p>' + myPlayList[i].mp3url +'<p>');
+        $('.songs').append('<p>' + myPlayList[i].imageurl +'<p>');
+    }
 
   
 }
 
 function clearList(){
-  
+   $('.songs').empty();
   
   
 }
 
 function addSong(){
- 
-  
-  
+	var titleInput = $("#title").val();
+    var artistInput = $("#artist").val();
+    var urlInput = $("#mp3url").val();
+    var imageInput = $("#imageurl").val();
+    
+    var song = {
+        title: titleInput,
+        artist: artistInput,
+        url: urlInput,
+        image: imageInput
+        };
+    playList.push(song);
 }
+
+displayList();
+
+  
+
