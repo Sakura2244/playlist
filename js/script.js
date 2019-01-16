@@ -25,22 +25,22 @@
 
     var myPlayList = [
     	{
-    		"title":"24K Magic",
-    		"artist":"Bruno Mars",
-    		"mp3url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-    		"imageurl":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
+    		"title":"Liang Liang",
+    		"artist":"Aska Yang, Zhang Bichen",
+    		"mp3url":"https://open.spotify.com/track/7LmFgyIHlXRqjDOt68RQoQ",
+    		"imageurl":"https://c-sf.smule.com/sf/s84/arr/98/e7/ad88b07c-34b1-425a-ab9d-5b531961535c_1024.jpg",
     	},
     	{
-    		"title":"Sir Duke",
-    		"artist":"Stevie Wonder",
-    		"mp3url":"https://open.spotify.com/track/2udw7RDkldLFIPG9WYdVtT",
-    		"imageurl":"https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Songs_in_the_key_of_life.jpg/220px-Songs_in_the_key_of_life.jpg",
+    		"title":"Gaze",
+    		"artist":"Zhang Bichen, Zhao Liying",
+    		"mp3url":"https://open.spotify.com/track/46VQfrwm8BGgKQV7ZhoNsq",
+    		"imageurl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzrZONZm9-R2rL47NMOAbPq8eVpPy6jwxwa5YO5eSRNJN0zyGreg",
     	},
     	{
-    		"title":"Sorry",
-    		"artist":"Justin Bieber",
-    		"mp3-url":"https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
-    		"imageurl":"http://assets-s3.usmagazine.com/uploads/assets/articles/93827-justin-biebers-sorry-choreographer-spills-video-style-secrets-parris-goebel/1445638548_justin-bieber-sorry-dancers-zoom.jpg",
+    		"title":"Flourishing Dream ",
+    		"artist":"Isabelle Huang",
+    		"mp3-url":"https://open.spotify.com/track/3XGcV54ogbQ5OsT6cv7VJa",
+    		"imageurl":"https://i.pinimg.com/736x/0e/09/89/0e098924c6b44d53a73b1d885e11e27a.jpg",
     	}
     
     ]
@@ -121,4 +121,3 @@ $( document ).ready(function() {
     displayList();
 
 });
-
