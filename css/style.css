@@ -3,15 +3,16 @@ h1{
 }
 body{
     background:url("http://www.51pptmoban.com/d/file/2013/02/25/af1a9c54cd3c4007f395ecc6e66bd6a6.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    color:red;
+    color:#ff66cc;
     font-family: 'Courgette', cursive;
 }
 img{
     border:dashed;
     width:140px;
     height:220px;
+    border-radius: 10px;
 }
 input{
     border-radius:30px;
@@ -19,4 +20,7 @@ input{
 button{
     border-radius: 22.5px;
     font-family: 'Courgette', cursive;
+}
+#mp3url{
+    color:pink;
 }
